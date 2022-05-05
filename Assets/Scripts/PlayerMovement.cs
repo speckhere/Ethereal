@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour {
     void Start()
     {
         Debug.Log("Sup Sexy!");
+		controller = GetComponent<CharacterController2D>()
     }
 
 	// Update is called once per frame
@@ -39,6 +40,11 @@ public class PlayerMovement : MonoBehaviour {
 			crouch = false;
 		}
 
+		if (controller.isGrounded)
+		{
+			print("CharacterController2D is grounded");
+		}
+
 	}
 
 	public void OnLanding ()
@@ -58,4 +64,6 @@ public class PlayerMovement : MonoBehaviour {
 		controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
 		jump = false;
 	}
+
+
 }

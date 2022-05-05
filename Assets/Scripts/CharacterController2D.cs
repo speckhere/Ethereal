@@ -65,16 +65,13 @@ public class CharacterController2D : MonoBehaviour
 	{
 		// If crouching, check to see if the character can stand up
 		if (!crouch)
- @limalshaji
-limalshaji on Apr 8, 2020
-the ! needs to go
 
-@speckhere	Reply…
 		{
 			// If the character has a ceiling preventing them from standing up, keep them crouching
 			if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
 			{
 				crouch = true;
+				jump = false;
 			}
 		}
 
@@ -136,7 +133,6 @@ the ! needs to go
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 		}
 	}
-
 
 	private void Flip()
 	{
