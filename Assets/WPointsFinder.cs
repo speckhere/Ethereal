@@ -18,11 +18,10 @@ public class WPointsFinder : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, Wpoints.waypoints[waypointIndex].position, speed * Time.deltaTime);
   
-       
-       
         if(Vector2.Distance(transform.position, Wpoints.waypoints[waypointIndex].position) < 0.1f) 
         {
             waypointIndex++;
         }
     }
+
 }

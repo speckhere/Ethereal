@@ -1,18 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SluggyOnDaMove : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public float speed;
+    public Vector2 target;
+    private Vector2 position;
+
     void Start()
     {
-        
+        target = new Vector2(0.0f, 0.0f);
+        position = gameObject.transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
+
         
     }
 }
