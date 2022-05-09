@@ -143,21 +143,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &19556250
-MonoBehaviour:
+--- !u!50 &19556250
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19556249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a05fe8356db1f44ea9ba4b963a57cea0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 589333546}
-  - {fileID: 594197209}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
 --- !u!114 &19556251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,12 +173,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 19556249}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a93e093bd5a64605bb86d7ae0e29509, type: 3}
+  m_Script: {fileID: 11500000, guid: c557db5427fa04b91a4b6a8129c12345, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 19556252}
-  startPos: 17.01
-  originPositionsObject: {fileID: 19556249}
+  speed: 0.2
+  waypoints: []
 --- !u!95 &19556252
 Animator:
   serializedVersion: 3
@@ -424,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc1b59ab6a01c4b21ae5f226bc1d677f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1
   waypoints:
   - {fileID: 640703653}
   - {fileID: 1506115563}
@@ -4327,7 +4332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e4726790aba2496a8765b8048d33314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.6
+  speed: 0.3
   waypoints:
   - {fileID: 42295672}
   - {fileID: 1499328539}
@@ -15629,7 +15634,7 @@ GameObject:
   - component: {fileID: 2120148982}
   m_Layer: 0
   m_Name: Snail Waypoints
-  m_TagString: Waypoints
+  m_TagString: Snail-WPS
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
