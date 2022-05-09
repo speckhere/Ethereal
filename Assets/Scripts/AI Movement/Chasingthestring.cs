@@ -13,7 +13,7 @@ public class Chasingthestring : MonoBehaviour
 
 void Start()
     {
-        facingLeft = true;
+        //facingLeft = true;
         animator = GetComponent<Animator>();
 
         startPos = pos.x;
@@ -26,17 +26,14 @@ void Update()
         if(currentPos > startPos)
         {
             // right
-            facingRight = true;
+            //facingRight = true;
             animator.Play("SlugRight");
-            Debug.Log("RIGHT");
         }
-        
-        if(currentPos < startPos) 
+        else if(currentPos < startPos) 
         {
             // left
-            facingLeft = true;
+            //facingLeft = true;
             animator.Play("SlugLeft");
-            Debug.Log("LEFT");
         }
         startPos = currentPos;
     }
