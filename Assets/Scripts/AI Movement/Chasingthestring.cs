@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Chasingthestring : MonoBehaviour
 {
-    private bool facingRight;
-    private bool facingLeft;
+    //private bool facingRight;
+    //private bool facingLeft;
     public Animator animator;
     
     private Vector2 pos;
