@@ -12,10 +12,22 @@ public class PlayerMovement : MonoBehaviour {
 	float horizontalMove = 0f;
 	bool jump = false;
 	bool crouch = false;
+	bool right = false;
+    bool left = false;
+    
+    private Vector2 pos;
+    public float startPos;
+
+    public GameObject originPositionsObject;
 
     void Start()
     {
         Debug.Log("Sup Sexy!");
+		left = true;
+		animator.SetBool("facingLeft", true);
+        animator = GetComponent<Animator>();
+
+        startPos = pos.x;
     }
 
 	// Update is called once per frame
@@ -38,13 +50,31 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			crouch = false;
 		}
+		
+		//ChasingTheString
+		//float currentPos = transform.position.x;
+
+        //if(currentPos > startPos)
+        //{
+            // right
+        //    right = true;
+		//	animator.SetBool("facingR", true);
+            
+        //}
+        //else if(currentPos < startPos) 
+        //{
+            // left
+        //    left = true;
+		//	animator.SetBool("facingLeft", true);
+
+        //}
+        //startPos = currentPos;
 
 	}
 
-	public void OnLanding ()
+	public void OnLanding () 
 	{
 		animator.SetBool("IsJumping", false);
-        Debug.Log("Landed");
 	}
 
 	public void OnCrouching (bool isCrouching)
@@ -54,10 +84,14 @@ public class PlayerMovement : MonoBehaviour {
 
 	void FixedUpdate ()
 	{
-		// Move our character
+		//Move our character
 		controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
 		jump = false;
 	}
+
+
+
+
 
 
 }

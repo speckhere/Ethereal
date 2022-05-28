@@ -21,6 +21,7 @@ public class SwimmingSystem : MonoBehaviour
         if(isSwimming)
         { 
             movement.runSpeed = 20f;
+            Debug.Log("SWIMMING");
         }
         
     }

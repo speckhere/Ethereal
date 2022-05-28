@@ -8,6 +8,7 @@ public class LadderMovement : MonoBehaviour
     private float vertical;
     private float speed = 8f;
     private bool isLadder;
+    bool up = false;
     private bool isClimbing;
     public Animator animator;
 
@@ -18,11 +19,19 @@ public class LadderMovement : MonoBehaviour
     {
         vertical = Input.GetAxis("Vertical");
 
-        if (isLadder && Mathf.Abs(vertical) > 0f)
+        if (isLadder && up)
         {
             isClimbing = true;
-            animator.Play("Climbing");
+            //animator.Play("Climbing");
         }
+
+        if (Input.GetButtonDown("Vertical"))
+		{
+			up = true;
+		} else if (Input.GetButtonUp("Vertical"))
+		{
+			up = false;
+		}
     }
 
     private void FixedUpdate()
