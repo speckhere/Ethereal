@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Waypoints
+  - Water
+  - Ground
+  - Ladder
+  - FF-Waypoints
+  - Snail-WPS
   layers:
   - Default
   - TransparentFX
@@ -12,11 +18,11 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
+  - Enemies
   - 
   - 
   - Item
-  - 
+  - Waypoints
   - 
   - 
   - 

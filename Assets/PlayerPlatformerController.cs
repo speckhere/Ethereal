@@ -7,9 +7,12 @@ public class PlayerPlatformerController : PhysicsObject {
 
     public float maxSpeed = 100f;
     public float jumpTakeOffSpeed = 100f;
+    public float climbingSpeed = 30f;
 
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+
+    private bool isLadder;
 
     // Use this for initialization
     void Awake () 
@@ -35,6 +38,24 @@ public class PlayerPlatformerController : PhysicsObject {
             }
         }
 
+        if (Input.GetButtonDown ("Vertical") && isLadder)
+        {
+            velocity.y = climbingSpeed;
+            //climbing = true;
+            animator.SetBool("climbing", true);
+        
+        } else if (Input.GetButtonUp ("Vertical") && isLadder)
+        {
+            //velocity.y = velocity.y * 0;
+            //Physics2D.gravity = new Vector2(0, 0f);
+            
+            Debug.Log("On the ladder");
+        
+        } else if (Input.GetButtonUp ("Vertical") && !isLadder)
+        {
+            Debug.Log("Nerd");
+        }
+        
         bool flipSprite = (spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < 0.01f));
         if (flipSprite) 
         {
@@ -45,5 +66,22 @@ public class PlayerPlatformerController : PhysicsObject {
         animator.SetFloat ("velocityX", Mathf.Abs (velocity.x) / maxSpeed);
 
         targetVelocity = move * maxSpeed;
+    }
+    
+    private void OnTriggerEnter2D(Collider2D collision) //If enter ladder collision
+    {
+        if (collision.CompareTag("Ladder"))
+        {
+            isLadder = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision) //If exit ladder collision
+    {
+        if (collision.CompareTag("Ladder"))
+        {
+            isLadder = false;
+            animator.SetBool("climbing", false);
+        }
     }
 }

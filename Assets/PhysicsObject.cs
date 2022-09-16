@@ -20,6 +20,7 @@ public class PhysicsObject : MonoBehaviour {
     protected const float minMoveDistance = 0.001f;
     protected const float shellRadius = 0.01f;
 
+
     void OnEnable()
     {
         rb2d = GetComponent<Rigidbody2D> ();
@@ -35,7 +36,7 @@ public class PhysicsObject : MonoBehaviour {
     void Update () 
     {
         targetVelocity = Vector2.zero;
-        ComputeVelocity ();    
+        ComputeVelocity ();  
     }
 
     protected virtual void ComputeVelocity()

@@ -36,12 +36,27 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
+     <Compile Include="Assets/Scripts/Character/SwimmingSystem.cs" />
+     <Compile Include="Assets/Scripts/AI Movement/FireFly.cs" />
+     <Compile Include="Assets/EnemyAI.cs" />
+     <Compile Include="Assets/Scripts/Character/LadderMovement.cs" />
+     <Compile Include="Assets/Shroom_Attack.cs" />
+     <Compile Include="Assets/EnemyHealthBar.cs" />
+     <Compile Include="Assets/PlayerCombat.cs" />
+     <Compile Include="Assets/HealthBar.cs" />
+     <Compile Include="Assets/Scripts/AI Movement/Waypoints.cs" />
+     <Compile Include="Assets/Scripts/AI Movement/WPointsFinder.cs" />
+     <Compile Include="Assets/Sluggy.cs" />
+     <Compile Include="Assets/Scripts/Character/PlayerMovement.cs" />
      <Compile Include="Assets/Scripts/ChestOpener.cs" />
+     <Compile Include="Assets/Scripts/AI Movement/Chasingthestring.cs" />
      <Compile Include="Assets/Scripts/detectionRadius.cs" />
-     <Compile Include="Assets/Scripts/CharacterController2D.cs" />
+     <Compile Include="Assets/Scripts/Character/CharacterController2D.cs" />
      <Compile Include="Assets/Scripts/FollowPlayer.cs" />
-     <Compile Include="Assets/Scripts/Interactables.cs" />
+     <Compile Include="Assets/FlippingTheBean.cs" />
+     <Compile Include="Assets/PlayerHealth.cs" />
+     <Compile Include="Assets/PlayerPlatformerController.cs" />
+     <Compile Include="Assets/PhysicsObject.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.28f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -263,6 +278,9 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.28f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+        <HintPath>/Users/savannah/Ethereal/Library/Ethereal/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>/Users/savannah/Ethereal/Library/Ethereal/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
@@ -704,6 +722,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{cfd09c35-ea9a-53c9-c645-0802ce455612}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{60391b03-1b5b-61be-68ea-e6e2d2f10ba9}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{b2d7d763-aaf5-4de7-6153-c877f63740e7}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
