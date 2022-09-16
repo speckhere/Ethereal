@@ -11380,6 +11380,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8077662794144741677, guid: db16239bab17044898b4dd6039ff369e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8b48353bdc0304a12b24cc9ca13a4a7a, type: 3}
     - target: {fileID: 8077662794144741678, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: m_Name
       value: Player_PF
@@ -11403,6 +11407,14 @@ PrefabInstance:
     - target: {fileID: 8077662794144741681, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: m_Offset.y
       value: 1.0228982
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077662794144741681, guid: db16239bab17044898b4dd6039ff369e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077662794144741681, guid: db16239bab17044898b4dd6039ff369e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8077662794144741682, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: m_Radius
@@ -11434,6 +11446,10 @@ PrefabInstance:
       objectReference: {fileID: 1220833196}
     - target: {fileID: 8077662794144741687, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: OnCrouchEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077662794144741691, guid: db16239bab17044898b4dd6039ff369e, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8077662794157253026, guid: db16239bab17044898b4dd6039ff369e, type: 3}
@@ -28460,8 +28476,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06386781, y: -0.29684472}
-  m_Size: {x: 1.2153645, y: 3.4063106}
+  m_Offset: {x: -0.034510612, y: -0.039979935}
+  m_Size: {x: 0.7456684, y: 1.8944769}
   m_Direction: 0
 --- !u!61 &1220833196 stripped
 BoxCollider2D:
@@ -56641,6 +56657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dae0a594dc374f4c9ae05bf1863f030, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_JumpForce: 400
   m_MovementSmoothing: 0.05
   m_AirControl: 1
   m_WhatIsGround:
