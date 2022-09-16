@@ -18,6 +18,10 @@ public class CharacterController2D : MonoBehaviour
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
+	private bool falling = false;
+
+	//testing
+
 
 	[Header("Events")]
 	[Space]
@@ -56,6 +60,7 @@ public class CharacterController2D : MonoBehaviour
 	{
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
+		
 
 		// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
 		// This can be done using layers instead but Sample Assets will not overwrite your project settings.
@@ -65,15 +70,19 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
+				//falling = false;
+				
 				if (!wasGrounded)
 					OnLandEvent.Invoke();
-					Debug.Log("Landed");
+					//Debug.Log("Landed");
+					//falling = false;
 			}
 		}
+
 	}
 
 
-	public void Move(float move, bool crouch, bool jump)
+	public void Move(float move, bool crouch, bool jump, bool falling)
 	{
 		// If crouching, check to see if the character can stand up
 		//if (!crouch)
@@ -143,7 +152,14 @@ public class CharacterController2D : MonoBehaviour
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+		
 		}
+
+		
+		
+		
+		
+
 	}
 
 	private void Flip()
@@ -157,4 +173,37 @@ public class CharacterController2D : MonoBehaviour
 		transform.localScale = theScale;
 	}
 
+	public void Falling()
+	{
+		Vector2 currentPos = m_Rigidbody2D.position;
+		Vector2 currentPos2 = m_Rigidbody2D.transform.position;
+		float y1 = currentPos.y;
+		float y2 = currentPos2.y;
+
+		if(y1 > y2)
+		{
+			falling = true;
+			Debug.Log("777" + falling);
+		}
+
+	}
+	//Michael's plan
+	// public void Falling()
+	// {
+	// 	bool fallCheck = false;
+
+	// 	Vector2 currentVel = m_Rigidbody2D.velocity;
+
+	// 	if(currentVel.y < 0)
+	// 	{
+	// 		fallCheck = true;
+	// 		Debug.Log("WOWZA" + currentVel.y);
+	// 	}
+	// 	else if (currentVel.y == 0)
+	// 	{
+	// 		fallCheck = false;
+	// 	} 
+
+	// 	return fallCheck;
+	// }
 }
