@@ -19,9 +19,6 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
 
-	//testing
-
-
 	[Header("Events")]
 	[Space]
 
@@ -33,16 +30,7 @@ public class CharacterController2D : MonoBehaviour
 	//public BoolEvent OnCrouchEvent;
 	//private bool m_wasCrouching = false;
 
-	
-	//Chasing the String
-	private bool facingRight;
-    private bool facingLeft;
-    public Animator animator;
-  
-
     public GameObject originPositionsObject;
-
-
 
 	private void Awake()
 	{
@@ -69,14 +57,13 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
-				
+
 				if (!wasGrounded)
-					OnLandEvent.Invoke();
+					OnLandEvent.Invoke();		
 			}
 		}
 
 	}
-
 
 	public void Move(float move, bool crouch, bool jump)
 	{
@@ -166,22 +153,22 @@ public class CharacterController2D : MonoBehaviour
 
 	}
 	//Michael's plan
-	// public void Falling()
+	// public bool Ahhh()
 	// {
-	// 	bool fallCheck = false;
+	// 	//bool fallCheck = false;
 
 	// 	Vector2 currentVel = m_Rigidbody2D.velocity;
 
-	// 	if(currentVel.y < 0)
+	// 	if(currentVel.y < 0 && !m_Grounded)
 	// 	{
-	// 		fallCheck = true;
+	// 		return true;
 	// 		Debug.Log("WOWZA" + currentVel.y);
 	// 	}
-	// 	else if (currentVel.y == 0)
-	// 	{
-	// 		fallCheck = false;
-	// 	} 
+	// 	// else if (currentVel.y == 0)
+	// 	// {
+	// 	// 	fallCheck = false;
+	// 	// } 
 
-	// 	return fallCheck;
+	// 	return false;
 	// }
-}
+
