@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour {
 	public CharacterController2D controller;
 	public Animator animator;
 
-	public float runSpeed = 40f;
+	public float runSpeed = 80f;
 
 	float horizontalMove = 0f;
 	bool jump = false;
@@ -47,6 +47,15 @@ public class PlayerMovement : MonoBehaviour {
 		} else if (Input.GetButtonUp("Crouch"))
 		{
 			crouch = false;
+		}
+
+		if (controller.Falling()) 
+		{
+			animator.SetBool("IsFalling", true);
+		} 
+		else 
+		{
+			animator.SetBool("IsFalling", false);
 		}
 
 		
