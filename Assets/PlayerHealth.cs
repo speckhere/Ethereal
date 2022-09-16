@@ -17,17 +17,12 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(20);
-        }
-        
+        // removed damage on space bar press
     }
 
     void TakeDamage(int damage)
     {
         currentHealth -= damage;
-       
         healthBar.SetHealth(currentHealth);
     }
 }

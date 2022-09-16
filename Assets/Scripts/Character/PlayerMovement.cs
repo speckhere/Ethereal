@@ -22,9 +22,8 @@ public class PlayerMovement : MonoBehaviour {
 
     void Start()
     {
-        Debug.Log("Sup Sexy!");
-		left = true;
-		animator.SetBool("facingLeft", true);
+		// left = true;
+		// animator.SetBool("facingLeft", true);
         animator = GetComponent<Animator>();
 
         startPos = pos.x;
@@ -50,7 +49,12 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			crouch = false;
 		}
-		
+
+		if (controller.Falling) {
+			animator.setBool("IsFalling", true);
+			Debug.Log("Falling");
+		}
+
 		//ChasingTheString
 		//float currentPos = transform.position.x;
 
@@ -88,10 +92,4 @@ public class PlayerMovement : MonoBehaviour {
 		controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
 		jump = false;
 	}
-
-
-
-
-
-
 }
