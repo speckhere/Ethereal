@@ -160,11 +160,13 @@ public class CharacterController2D : MonoBehaviour
 	public bool Falling() {
 		bool fallCheck = false;
 
-		Vector2 currentVel= m_Rigidbody2D.velocity;
+		Vector2 currentVel = m_Rigidbody2D.velocity;
+
 		if (currentVel.y < 0) {
 			fallCheck = true;
 			Debug.Log("Falling @: " + currentVel.y);
 		}
+
 		if (currentVel.y > 0) {
 			fallCheck = false;
 			Debug.Log("Not Falling @: " + currentVel.y);

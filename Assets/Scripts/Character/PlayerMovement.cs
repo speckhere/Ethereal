@@ -50,8 +50,8 @@ public class PlayerMovement : MonoBehaviour {
 			crouch = false;
 		}
 
-		if (controller.Falling) {
-			animator.setBool("IsFalling", true);
+		if (controller.Falling()) {
+			animator.SetBool("IsFalling", true);
 			Debug.Log("Falling");
 		}
 
