@@ -31,15 +31,7 @@ public class CharacterController2D : MonoBehaviour
 	//public BoolEvent OnCrouchEvent;
 	//private bool m_wasCrouching = false;
 
-	
-	//Chasing the String
-	private bool facingRight;
-    private bool facingLeft;
-    public Animator animator;
-
     public GameObject originPositionsObject;
-
-
 
 	private void Awake()
 	{
@@ -56,6 +48,7 @@ public class CharacterController2D : MonoBehaviour
 	{
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
+		
 
 		// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
 		// This can be done using layers instead but Sample Assets will not overwrite your project settings.
@@ -65,13 +58,13 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
+
 				if (!wasGrounded)
-					OnLandEvent.Invoke();
-					Debug.Log("Landed");
+					OnLandEvent.Invoke();		
 			}
 		}
-	}
 
+	}
 
 	public void Move(float move, bool crouch, bool jump)
 	{
@@ -144,6 +137,7 @@ public class CharacterController2D : MonoBehaviour
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 		}
+
 	}
 
 	private void Flip()

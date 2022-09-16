@@ -47,16 +47,16 @@
      <Compile Include="Assets/Scripts/AI Movement/Waypoints.cs" />
      <Compile Include="Assets/Scripts/AI Movement/WPointsFinder.cs" />
      <Compile Include="Assets/Sluggy.cs" />
+     <Compile Include="Assets/PlayerPlatformerController.cs" />
      <Compile Include="Assets/Scripts/Character/PlayerMovement.cs" />
      <Compile Include="Assets/Scripts/ChestOpener.cs" />
      <Compile Include="Assets/Scripts/AI Movement/Chasingthestring.cs" />
      <Compile Include="Assets/Scripts/detectionRadius.cs" />
      <Compile Include="Assets/Scripts/Character/CharacterController2D.cs" />
+     <Compile Include="Assets/PhysicsObject.cs" />
      <Compile Include="Assets/Scripts/FollowPlayer.cs" />
      <Compile Include="Assets/FlippingTheBean.cs" />
      <Compile Include="Assets/PlayerHealth.cs" />
-     <Compile Include="Assets/PlayerPlatformerController.cs" />
-     <Compile Include="Assets/PhysicsObject.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.28f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -693,9 +693,6 @@
     <Reference Include="Unity.2D.IK.Runtime">
         <HintPath>/Users/savannah/Ethereal/Library/Ethereal/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-        <HintPath>/Users/savannah/Ethereal/Library/Ethereal/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
         <HintPath>/Users/savannah/Ethereal/Library/Ethereal/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
@@ -719,6 +716,9 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
         <HintPath>/Users/savannah/Ethereal/Library/Ethereal/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
+        <HintPath>/Users/savannah/Ethereal/Library/Ethereal/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
