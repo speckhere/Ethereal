@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour {
 	bool crouch = false;
 	bool right = false;
     bool left = false;
-	bool falling = false;
 
     public GameObject originPositionsObject;
 
@@ -29,10 +28,9 @@ public class PlayerMovement : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
-		controller.Move(horizontalMove * Time.deltaTime, crouch, jump, falling);
+		
+		controller.Move(horizontalMove * Time.deltaTime, crouch, jump);
 		jump = false;
-		//Debug.Log(falling);
 
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
@@ -52,11 +50,6 @@ public class PlayerMovement : MonoBehaviour {
 			crouch = false;
 		}
 
-		if (falling == true)
-		{
-			animator.SetBool("IsFalling", true);
-			Debug.Log("JOJO!!!");
-		}
 	}
 
 	public void OnLanding () 
@@ -67,13 +60,6 @@ public class PlayerMovement : MonoBehaviour {
 	public void OnCrouching (bool isCrouching)
 	{
 		animator.SetBool("IsCrouching", isCrouching);
-	}
-
-	void FixedUpdate ()
-	{
-		//Move our character
-		
-
 	}
 
 }

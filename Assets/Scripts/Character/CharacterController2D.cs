@@ -18,7 +18,6 @@ public class CharacterController2D : MonoBehaviour
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
-	private bool falling = false;
 
 	//testing
 
@@ -70,19 +69,16 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
-				//falling = false;
 				
 				if (!wasGrounded)
 					OnLandEvent.Invoke();
-					//Debug.Log("Landed");
-					//falling = false;
 			}
 		}
 
 	}
 
 
-	public void Move(float move, bool crouch, bool jump, bool falling)
+	public void Move(float move, bool crouch, bool jump)
 	{
 		// If crouching, check to see if the character can stand up
 		//if (!crouch)
@@ -155,11 +151,6 @@ public class CharacterController2D : MonoBehaviour
 		
 		}
 
-		
-		
-		
-		
-
 	}
 
 	private void Flip()
@@ -172,19 +163,6 @@ public class CharacterController2D : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
-
-	public void Falling()
-	{
-		Vector2 currentPos = m_Rigidbody2D.position;
-		Vector2 currentPos2 = m_Rigidbody2D.transform.position;
-		float y1 = currentPos.y;
-		float y2 = currentPos2.y;
-
-		if(y1 > y2)
-		{
-			falling = true;
-			Debug.Log("777" + falling);
-		}
 
 	}
 	//Michael's plan
