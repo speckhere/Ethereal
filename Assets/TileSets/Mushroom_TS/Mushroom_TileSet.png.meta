@@ -219,7 +219,7 @@ TextureImporter:
       213: 583665586435308131
     second: Mushroom_TileSet_71
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -240,6 +240,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -278,6 +279,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -293,6 +295,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1828,6 +1854,79 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Mushroom_TileSet_6: 9028156921658825833
+      Mushroom_TileSet_33: -7574709711776125171
+      Mushroom_TileSet_60: -4802794133430748162
+      Mushroom_TileSet_42: -882586777023454582
+      Mushroom_TileSet_61: -2689310975298180454
+      Mushroom_TileSet_66: 6683504368047716741
+      Mushroom_TileSet_27: 5996497269157229037
+      Mushroom_TileSet_10: -7895711705594140727
+      Mushroom_TileSet_28: 3551505418666174221
+      Mushroom_TileSet_35: 4839866003590206702
+      Mushroom_TileSet_49: -7345903382509138803
+      Mushroom_TileSet_70: -4973135063875212225
+      Mushroom_TileSet_37: -419797217767507286
+      Mushroom_TileSet_7: -8649982489899807842
+      Mushroom_TileSet_55: -5967321983757288098
+      Mushroom_TileSet_0: -221824902859134621
+      Mushroom_TileSet_39: 8211253171176747356
+      Mushroom_TileSet_52: 8146857412021048126
+      Mushroom_TileSet_57: 1779460477428923202
+      Mushroom_TileSet_51: 1936696704163171122
+      Mushroom_TileSet_63: -7695392394972312513
+      Mushroom_TileSet_69: -6520649690033237546
+      Mushroom_TileSet_26: -6496949187885818628
+      Mushroom_TileSet_16: -3323557669688265887
+      Mushroom_TileSet_41: 2653448610533215193
+      Mushroom_TileSet_59: 8282717169661569088
+      Mushroom_TileSet_40: -2884446474379084475
+      Mushroom_TileSet_23: -318022831236846414
+      Mushroom_TileSet_1: 7327231951567238671
+      Mushroom_TileSet_12: -7262155337210598633
+      Mushroom_TileSet_64: 1129714872962116228
+      Mushroom_TileSet_48: 6395889417378815370
+      Mushroom_TileSet_45: 3265672133280758305
+      Mushroom_TileSet_2: 3939425049425003861
+      Mushroom_TileSet_9: -743491854517993813
+      Mushroom_TileSet_24: -4373585159259300163
+      Mushroom_TileSet_20: -720158106951986142
+      Mushroom_TileSet_3: 304684093828338394
+      Mushroom_TileSet_46: 6931004760691298869
+      Mushroom_TileSet_44: 6640602456540620788
+      Mushroom_TileSet_38: -2117935133782683349
+      Mushroom_TileSet_11: -7972785671272848360
+      Mushroom_TileSet_32: 4321137549054436939
+      Mushroom_TileSet_54: 8014754947331296218
+      Mushroom_TileSet_21: -7446436108508660862
+      Mushroom_TileSet_47: -1525186927489608734
+      Mushroom_TileSet_53: 5251257361067312335
+      Mushroom_TileSet_34: -7736870455228117383
+      Mushroom_TileSet_18: 6610897382077114509
+      Mushroom_TileSet_36: 8366535894187690926
+      Mushroom_TileSet_67: 2060208072516956728
+      Mushroom_TileSet_43: -3752657452777460931
+      Mushroom_TileSet_65: 5370134227059809045
+      Mushroom_TileSet_13: -2993737775662521697
+      Mushroom_TileSet_25: -2373095203672893240
+      Mushroom_TileSet_31: 1846391985328821002
+      Mushroom_TileSet_56: 5990584941739477795
+      Mushroom_TileSet_29: -5205021202211386238
+      Mushroom_TileSet_19: -7831225094694935188
+      Mushroom_TileSet_58: 766562230063786750
+      Mushroom_TileSet_17: 7654807082423286003
+      Mushroom_TileSet_22: 7333615091550488448
+      Mushroom_TileSet_71: 583665586435308131
+      Mushroom_TileSet_68: 1500402605209648228
+      Mushroom_TileSet_14: 7422010451252358361
+      Mushroom_TileSet_4: -1367916394847600065
+      Mushroom_TileSet_15: -8527471510398481292
+      Mushroom_TileSet_62: 6229868577113125769
+      Mushroom_TileSet_50: -5255356576245760124
+      Mushroom_TileSet_30: -2596083578472243986
+      Mushroom_TileSet_5: 4310174058048125174
+      Mushroom_TileSet_8: 7470019001046758416
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
