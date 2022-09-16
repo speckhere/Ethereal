@@ -11413,7 +11413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077662794144741680, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: m_Mass
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8077662794144741680, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: m_GravityScale
@@ -56686,6 +56686,7 @@ MonoBehaviour:
   controller: {fileID: 2039012148}
   animator: {fileID: 2039012149}
   runSpeed: 40
+  startPos: 0
   originPositionsObject: {fileID: 2039012141}
 --- !u!58 &2039012145
 CircleCollider2D:
@@ -56785,6 +56786,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  animator: {fileID: 0}
   originPositionsObject: {fileID: 0}
 --- !u!95 &2039012149
 Animator:
