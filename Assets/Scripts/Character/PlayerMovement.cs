@@ -50,6 +50,8 @@ public class PlayerMovement : MonoBehaviour {
 			crouch = false;
 		}
 
+		
+
 	}
 
 	public void OnLanding () 
@@ -60,6 +62,13 @@ public class PlayerMovement : MonoBehaviour {
 	public void OnCrouching (bool isCrouching)
 	{
 		animator.SetBool("IsCrouching", isCrouching);
+	}
+
+	void FixedUpdate () {
+		
+		controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
+		jump = false;
+
 	}
 
 }
