@@ -155,7 +155,7 @@ public class CharacterController2D : MonoBehaviour
 		bool fallCheck = false;
 
 		Vector2 currentVel= m_Rigidbody2D.velocity;
-		if (currentVel.y < 0) {
+		if (currentVel.y < 0 && !m_Grounded) {
 			fallCheck = true;
 			Debug.Log("Falling @: " + currentVel.y);
 		}
