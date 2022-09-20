@@ -27,6 +27,20 @@ The project is using Unity 2021.3.10f1 and you can install it from the
   * Window users can download [2021.3.10f1](https://download.unity3d.com/download_unity/1c7d0df0160b/UnityDownloadAssistant-2021.3.10f1.exe)
   * MacOS users can download [2021.3.10f1](https://download.unity3d.com/download_unity/1c7d0df0160b/UnityDownloadAssistant-2021.3.10f1.dmg)
 
+### MacOS
+Can read the official
+[How to activate a Unity license via command line on macOS](https://support.unity.com/hc/en-us/articles/5541533346068-How-to-activate-a-Unity-license-via-command-line-on-macOS-)
+
+Here is my notes:
+  1. Exit Unity
+  1. cd ~/Downloads
+  1. /Applications/Unity/Unity.app/Contents/MacOS/Unity -batchmode -createManualActivationFile -logfile
+  1. Open the [license.unity3d.com/manual](https://license.unity3d.com/manual) webpage
+  1. Browse, navigate to ~/Download and upload the *.alf file
+  1. Select Unity Personal Edition
+  1. Download the license file
+  1. /Applications/Unity/Unity.app/Contents/MacOS/Unity -batchmode -manualLicenseFile Unity_v2021.x.ulf -logfile
+
 ## Install Discord
 You will need to have [Discord](https://discord.com/download) installed on your computer or
 
