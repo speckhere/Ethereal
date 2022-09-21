@@ -22,7 +22,12 @@ public class LadderMovement : MonoBehaviour
         if (isLadder && up)
         {
             isClimbing = true;
-            animator.SetBool("climbing", true);
+            animator.SetBool("IsClimbing", true);
+            Debug.Log ("Going up!");
+        }  else if (!isLadder)
+        {
+            animator.SetBool("IsClimbing", false);
+            Debug.Log ("Chillin'");
         }
 
         if (Input.GetButtonDown("Vertical"))
