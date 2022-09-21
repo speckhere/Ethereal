@@ -19,40 +19,37 @@ TagManager:
   - UI
   - Ground
   - Enemies
-  -
-  -
-  - Item
-  - Waypoints
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Environment
-    uniqueID: 2542328871
+    uniqueID: 976169967
     locked: 0
-  - name: Level 1
-    uniqueID: 3333618077
-    locked: 0
-  - name: Item
-    uniqueID: 235658939
+  - name: Player
+    uniqueID: 1842333499
     locked: 0
