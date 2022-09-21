@@ -56,8 +56,6 @@ public class PlayerMovement : MonoBehaviour {
 			animator.SetBool("IsFalling", false);
 		}
 
-
-
 	}
 
 	public void OnLanding ()

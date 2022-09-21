@@ -23195,11 +23195,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077662794144741676, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 79.3
+      value: 14.5
       objectReference: {fileID: 0}
     - target: {fileID: 8077662794144741676, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.4
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 8077662794144741676, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -23320,7 +23320,7 @@ PrefabInstance:
     - target: {fileID: 8077662794144741687, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: m_CrouchDisableCollider
       value: 
-      objectReference: {fileID: 1901426113}
+      objectReference: {fileID: 0}
     - target: {fileID: 8077662794144741687, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: OnCrouchEvent.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -23369,7 +23369,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.35
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8077662794144741682, guid: db16239bab17044898b4dd6039ff369e, type: 3}
+    - {fileID: 8077662794144741681, guid: db16239bab17044898b4dd6039ff369e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: db16239bab17044898b4dd6039ff369e, type: 3}
 --- !u!1 &1901426111 stripped
 GameObject:
@@ -23379,11 +23381,6 @@ GameObject:
 --- !u!95 &1901426112 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8077662794144741686, guid: db16239bab17044898b4dd6039ff369e, type: 3}
-  m_PrefabInstance: {fileID: 1901426110}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1901426113 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 8077662794144741681, guid: db16239bab17044898b4dd6039ff369e, type: 3}
   m_PrefabInstance: {fileID: 1901426110}
   m_PrefabAsset: {fileID: 0}
 --- !u!70 &1901426114
