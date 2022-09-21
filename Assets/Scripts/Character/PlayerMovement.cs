@@ -12,8 +12,6 @@ public class PlayerMovement : MonoBehaviour {
 	float horizontalMove = 0f;
 	bool jump = false;
 	bool crouch = false;
-	bool right = false;
-    bool left = false;
 
     public GameObject originPositionsObject;
 
