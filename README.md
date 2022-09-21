@@ -29,7 +29,9 @@ The project is using Unity 2021.3.10f1 and you can install it from the
 
 ### MacOS
 Can read the official
-[How to activate a Unity license via command line on macOS](https://support.unity.com/hc/en-us/articles/5541533346068-How-to-activate-a-Unity-license-via-command-line-on-macOS-)
+[How to activate a Unity license via command line on macOS](https://support.unity.com/hc/en-us/articles/5541533346068-How-to-activate-a-Unity-license-via-command-line-on-macOS-).
+The default Unity installation trying to install Visual Studio Code. I recommend you
+uncheck the component.
 
 Here is my notes:
   1. Exit Unity
