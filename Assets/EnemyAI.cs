@@ -70,11 +70,11 @@ private Transform childObj;
         {
             Flip();
         }
-        else if(currentPos < startPos && m_FacingRight) 
+        else if(currentPos < startPos && m_FacingRight)
         {
             Flip();
         }
-        
+
         startPos = currentPos;
 
     }
@@ -87,7 +87,7 @@ private Transform childObj;
         {
             reachedEndOfPath = true;
             return;
-        } else 
+        } else
         {
             reachedEndOfPath = false;
         }
@@ -139,7 +139,7 @@ private Transform childObj;
         GetComponent<Collider2D>().enabled = false;
         //childObj.enabled = false;
         this.enabled = false;
-    
+
     }
 
     private void Flip()

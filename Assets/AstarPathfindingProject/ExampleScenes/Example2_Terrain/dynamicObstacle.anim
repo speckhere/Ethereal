@@ -32,7 +32,7 @@ AnimationClip:
         tangentMode: 1084227584
       m_PreInfinity: 2
       m_PostInfinity: 2
-    path: 
+    path:
   m_ScaleCurves: []
   m_FloatCurves: []
   m_SampleRate: 60
@@ -72,7 +72,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalPosition.x
-    path: 
+    path:
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -91,7 +91,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalPosition.y
-    path: 
+    path:
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -110,7 +110,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalPosition.z
-    path: 
+    path:
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []

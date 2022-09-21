@@ -4925,8 +4925,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fcbab0e97bcf4080a20b6753aa9921f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   player: {fileID: 1457936110}
 --- !u!1 &1022194391
 GameObject:
@@ -11728,8 +11728,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cbe6655c03ec42b480cd9f8c01e59b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   minGroundNormalY: 0.65
   gravityModifier: 3.5
   maxSpeed: 9
@@ -11787,7 +11787,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -11866,8 +11866,8 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e524ec635b92746638d7816c8671cc9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   animator: {fileID: 1457936108}
   rb: {fileID: 1457936107}
 --- !u!1 &1506634678
@@ -13701,8 +13701,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c5625fa4682141678526329e116d0e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   minGroundNormalY: 0.65
   gravityModifier: 1
 --- !u!50 &1642311332

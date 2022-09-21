@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f98cf1338b18d44c09c884e8f7de94ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!95 &111698477
 Animator:
   serializedVersion: 4
@@ -171,7 +171,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -383,8 +383,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc1b59ab6a01c4b21ae5f226bc1d677f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   speed: 3
   waypoints:
   - {fileID: 710869429}
@@ -409,7 +409,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -532,8 +532,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e4726790aba2496a8765b8048d33314, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   speed: 0.3
   waypoints:
   - {fileID: 1222671229}
@@ -550,8 +550,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a93e093bd5a64605bb86d7ae0e29509, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   animator: {fileID: 268395718}
   startPos: 3.03
   originPositionsObject: {fileID: 268395713}
@@ -571,7 +571,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -719,8 +719,8 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e524ec635b92746638d7816c8671cc9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   animator: {fileID: 0}
   rb: {fileID: 0}
 --- !u!483693784 &502132399
@@ -21797,7 +21797,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -21969,7 +21969,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -23058,8 +23058,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fcbab0e97bcf4080a20b6753aa9921f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   player: {fileID: 1901426124}
 --- !u!81 &1792545937
 AudioListener:
@@ -23215,7 +23215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077662794144741677, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 21300000, guid: 8b48353bdc0304a12b24cc9ca13a4a7a, type: 3}
     - target: {fileID: 8077662794144741678, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: m_Name
@@ -23279,7 +23279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077662794144741687, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: animator
-      value: 
+      value:
       objectReference: {fileID: 1901426112}
     - target: {fileID: 8077662794144741687, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: m_JumpForce
@@ -23287,7 +23287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077662794144741687, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: m_CrouchDisableCollider
-      value: 
+      value:
       objectReference: {fileID: 1901426113}
     - target: {fileID: 8077662794144741687, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: OnCrouchEvent.m_PersistentCalls.m_Calls.Array.size
@@ -26708,7 +26708,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -26847,8 +26847,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a05fe8356db1f44ea9ba4b963a57cea0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   waypoints:
   - {fileID: 710869429}
   - {fileID: 1835448089}
@@ -26902,8 +26902,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a05fe8356db1f44ea9ba4b963a57cea0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   waypoints:
   - {fileID: 1222671229}
   - {fileID: 2116478457}

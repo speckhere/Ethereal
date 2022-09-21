@@ -6,7 +6,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: facingLeft
@@ -31,7 +31,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: facingRight
@@ -72,18 +72,18 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 66adfe99030904f57a512a813fbacda1, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_Tag:
+  m_SpeedParameter:
+  m_MirrorParameter:
+  m_CycleOffsetParameter:
+  m_TimeParameter:
 --- !u!1101 &-266573447686333070
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: facingLeft
@@ -158,18 +158,18 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 398a5bc5bda7b4a65a8fd7b29cc771f8, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_Tag:
+  m_SpeedParameter:
+  m_MirrorParameter:
+  m_CycleOffsetParameter:
+  m_TimeParameter:
 --- !u!1101 &2207458143631481249
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: facingRight

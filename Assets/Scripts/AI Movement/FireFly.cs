@@ -17,7 +17,7 @@ public class FireFly : MonoBehaviour
        Wpoints = GameObject.FindGameObjectWithTag("FF-Waypoints").GetComponent<Waypoints>();
     }
 
-   void Update() 
+   void Update()
     {
 
         if(Vector2.Distance(transform.position, Wpoints.waypoints[waypointIndex].position) < 0.1f)
@@ -40,6 +40,6 @@ public class FireFly : MonoBehaviour
         {
             waypointIndex = 0;
         }
-        
+
     }
 }

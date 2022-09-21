@@ -1596,8 +1596,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4875a8530451448ab1be0ea35473d31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!65 &1905396800
 BoxCollider:
   m_ObjectHideFlags: 0

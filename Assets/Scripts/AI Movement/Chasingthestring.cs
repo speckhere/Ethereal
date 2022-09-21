@@ -5,7 +5,7 @@ public class Chasingthestring : MonoBehaviour
     //private bool facingRight;
     //private bool facingLeft;
     public Animator animator;
-    
+
     private Vector2 pos;
     public float startPos;
 
@@ -19,7 +19,7 @@ void Start()
         startPos = pos.x;
     }
 
-void Update() 
+void Update()
     {
         float currentPos = transform.position.x;
 
@@ -29,7 +29,7 @@ void Update()
             //facingRight = true;
             animator.Play("SlugRight");
         }
-        else if(currentPos < startPos) 
+        else if(currentPos < startPos)
         {
             // left
             //facingLeft = true;

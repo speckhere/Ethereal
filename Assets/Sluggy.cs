@@ -17,7 +17,7 @@ public class Sluggy : MonoBehaviour
        Wpoints = GameObject.FindGameObjectWithTag("Snail-WPS").GetComponent<Waypoints>();
     }
 
-   void Update() 
+   void Update()
     {
 
         if(Vector2.Distance(transform.position, Wpoints.waypoints[waypointIndex].position) < 0.1f)
@@ -40,6 +40,6 @@ public class Sluggy : MonoBehaviour
         {
             waypointIndex = 0;
         }
-        
+
     }
 }

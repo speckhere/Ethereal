@@ -17,7 +17,7 @@ public class WPointsFinder : MonoBehaviour
        Wpoints = GameObject.FindGameObjectWithTag("Waypoints").GetComponent<Waypoints>();
     }
 
-   void Update() 
+   void Update()
     {
 
         if(Vector2.Distance(transform.position, Wpoints.waypoints[waypointIndex].position) < 0.1f)
@@ -42,6 +42,6 @@ public class WPointsFinder : MonoBehaviour
         {
             waypointIndex = 0;
         }
-        
+
     }
 }

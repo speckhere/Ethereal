@@ -266,7 +266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077662794144741687, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: m_CrouchDisableCollider
-      value: 
+      value:
       objectReference: {fileID: 1582270570}
     - target: {fileID: 8077662794157253026, guid: db16239bab17044898b4dd6039ff369e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -329,14 +329,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   version: 1
   data:
     dataString: UEsDBBQAAAgIAACAn+trL+nKdgIAADAFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMziUjAwm4t5YQ0kMSJqSTiy+ytMYaZMmjjwDJ8N8ryTZ26Inl7dfbtyt/IS5NDdQqvdacPSkG6OcIBRv9GPXORziSnZJb/gldzDtntgxBJMa8EsuVx5OQZlQFVnP6S+5ECMYedJIXSlcrtoOlMtZ4uCDCgHdpZUO29NDXCB39zzgNKSdvTebB+vRWikdnb1KQFnQfOr29wbNkkrTx+AZPb2fzZJFOF23i3c10Npmni0m6GuM0FnGSClLVwMJEfa1J1zVJYpj0s7YRoT5VQnDTEkX2VEchtnUJGoISjBM/dyQXwkvgu9KGssPcl6IwYFtRNDndc+3la4qi36rRtCJm39D6IMKFNotm+qbm03/ucUO40Kp67NomOLSwJaf7V3KixNiB5kP4/jtvJw9E7Eku4L0E+azWWjnJvNNqF1Kdgcl9//cy2bIEuu/xhuoV6Ope7U7sbsFhhnMc/rgUvMrjNmcNsBUqqh3vArTfyx9POF6NaUt4NLD4a+CN7Ibn1ToeuDbWu9opZaCXK6dDKFpFzcI0zi6VlhDhlnQNkgh72vgy9nqDV75B2yvPAwkPqW3e+rr3cZUS4T4e4yvXRh0uyzKlOjyBKV+cFVxCTzo4nr1OSyVlc2BDTbq0rdMFoYO0nePs+2mhnGLACzYnOb1LcULHST4r8qRIpoCLWZ4QFG+PSz8nEZuGaCuP35rsi0t/Z933ZbTWpI7HzjQ5rPlnpYYEuSzUlmoA+dKUuDAH7bv4R8lWjHuFtmAtl3Hh6CtDQtE9sOzSM4ujro5Wk6yvkqGafygbkAwt4xclQwG+HPNGwweHQ2jeFTuj8z9QSwMEFAAACAgAAICf69njKxxtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tFJSskGqgUWKeWJSspmlgWGyrmGSSVqSYZqhcapBmkmSYaJSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAICf62sv6cp2AgAAMAUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAICf69njKxxtAAAAeAAAAAkAJAAAAAAAAAAAAAAAwwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAAB7AwAAAAA=
-    upgradeData: 
+    upgradeData:
     file_cachedStartup: {fileID: 0}
-    data_cachedStartup: 
+    data_cachedStartup:
     cacheStartup: 0
   showNavGraphs: 1
   showUnwalkableNodes: 1
@@ -2029,8 +2029,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -2048,8 +2048,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
@@ -37504,8 +37504,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fcbab0e97bcf4080a20b6753aa9921f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   player: {fileID: 1582270574}
 --- !u!81 &1990184298
 AudioListener:

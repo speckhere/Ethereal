@@ -1,6 +1,6 @@
 Shader "Projector/Light" {
   Properties {
-  	  _Color ("Main Color", Color) = (1,1,1,1)   	
+  	  _Color ("Main Color", Color) = (1,1,1,1)
      _ShadowTex ("Cookie", 2D) = "" { TexGen ObjectLinear }
      _FalloffTex ("FallOff", 2D) = "" { TexGen ObjectLinear }
   }

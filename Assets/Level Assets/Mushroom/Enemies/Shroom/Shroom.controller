@@ -21,11 +21,11 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 7eecd3967fb91435aaccc6dc69811b86, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_Tag:
+  m_SpeedParameter:
+  m_MirrorParameter:
+  m_CycleOffsetParameter:
+  m_TimeParameter:
 --- !u!1102 &-5204615568511067056
 AnimatorState:
   serializedVersion: 6
@@ -47,11 +47,11 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 9de646f2a88774f8a96c1ff612820497, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_Tag:
+  m_SpeedParameter:
+  m_MirrorParameter:
+  m_CycleOffsetParameter:
+  m_TimeParameter:
 --- !u!1102 &-3460596516423287429
 AnimatorState:
   serializedVersion: 6
@@ -73,11 +73,11 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 34dbc4150f779489e8f6a6dbc9d25f21, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_Tag:
+  m_SpeedParameter:
+  m_MirrorParameter:
+  m_CycleOffsetParameter:
+  m_TimeParameter:
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -135,18 +135,18 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 7cdadae342a0345dfb02acf8145c6f0d, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_Tag:
+  m_SpeedParameter:
+  m_MirrorParameter:
+  m_CycleOffsetParameter:
+  m_TimeParameter:
 --- !u!1101 &3738516343146897540
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: Hurt
@@ -171,7 +171,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: IsDead
@@ -196,7 +196,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name:
   m_Conditions:
   - m_ConditionMode: 2
     m_ConditionEvent: IsDead

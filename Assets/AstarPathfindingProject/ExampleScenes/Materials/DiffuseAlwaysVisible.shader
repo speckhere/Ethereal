@@ -7,8 +7,8 @@ Shader "Diffuse - Always visible" {
 	SubShader {
 		Tags { "RenderType"="Opaque-1" }
 		LOD 200
-		
-            
+
+
 
             Pass {
             	ZTest LEqual
@@ -17,29 +17,29 @@ Shader "Diffuse - Always visible" {
 	                Ambient [_Color]
 	            }
 	            Lighting On
-	            
+
 	            SetTexture [_MainTex] {
 					Combine texture * primary DOUBLE, texture * primary
-				} 
+				}
 	        }
-           
+
 		 Pass {
-            
+
         	ZTest Greater
-        	
+
         	Material {
         		Diffuse [_NotVisibleColor]
         	}
-        	
+
         	Color [_NotVisibleColor]
-        	
+
         }
-        
-		
-		
-		
-        
-		
-	} 
+
+
+
+
+
+
+	}
 	FallBack "Diffuse"
 }

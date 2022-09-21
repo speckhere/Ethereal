@@ -11,20 +11,20 @@ Shader "Hidden/AstarPathfindingProject/Navmesh Outline" {
 
 		Pass {
 			ZTest LEqual
-			
+
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
 
 			#include "UnityCG.cginc"
 			#include "Navmesh.cginc"
-			
+
 			float4 _Color;
 			float _PixelWidth;
-			
+
 			// Number of screen pixels that the _Falloff texture corresponds to
 			static const float FalloffTextureScreenPixels = 2;
-			
+
 			line_v2f vert (appdata_color v, out float4 outpos : SV_POSITION) {
 				line_v2f o = line_vert(v, _PixelWidth, outpos);
 				o.col = v.color * _Color;
@@ -48,7 +48,7 @@ Shader "Hidden/AstarPathfindingProject/Navmesh Outline" {
 
 		Pass {
 			ZTest Greater
-			
+
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
@@ -59,9 +59,9 @@ Shader "Hidden/AstarPathfindingProject/Navmesh Outline" {
 			float4 _Color;
 			float4 _FadeColor;
 			float _PixelWidth;
-			
+
 			static const float FalloffTextureScreenPixels = 2;
-			
+
 			line_v2f vert (appdata_color v, out float4 outpos : SV_POSITION) {
 				line_v2f o = line_vert(v, _PixelWidth, outpos);
 				o.col = v.color * _Color * _FadeColor;

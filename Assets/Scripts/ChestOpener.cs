@@ -6,15 +6,15 @@ public class ChestOpener : MonoBehaviour
     private bool playerNear;
     private bool interacted;
 
-   void Start() 
+   void Start()
    {
        animator = this.gameObject.GetComponent<Animator>();
        interacted = false;
-   }   
+   }
    void Update()
     {
         if(!interacted && playerNear)
-        { 
+        {
             if(Input.GetKey("e") && playerNear)
             {
                 animator.SetTrigger("interacted");
@@ -24,12 +24,12 @@ public class ChestOpener : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collision) 
+    void OnTriggerEnter2D(Collider2D collision)
     {
         playerNear = true;
     }
 
-    void OnTriggerExit2D(Collider2D collision) 
+    void OnTriggerExit2D(Collider2D collision)
     {
         playerNear = false;
     }

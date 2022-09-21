@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
+
 		controller.Move(horizontalMove * Time.deltaTime, crouch, jump);
 		jump = false;
 
@@ -49,20 +49,20 @@ public class PlayerMovement : MonoBehaviour {
 			crouch = false;
 		}
 
-		if (controller.Falling()) 
+		if (controller.Falling())
 		{
 			animator.SetBool("IsFalling", true);
-		} 
-		else 
+		}
+		else
 		{
 			animator.SetBool("IsFalling", false);
 		}
 
-		
+
 
 	}
 
-	public void OnLanding () 
+	public void OnLanding ()
 	{
 		animator.SetBool("IsJumping", false);
 	}
@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		
+
 		controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
 		jump = false;
 

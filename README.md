@@ -64,4 +64,3 @@ how to install extensions.
 
 # Educate Yourself
   * [Learn Unity - Beginner's Game Development Tutorial](https://www.youtube.com/watch?v=gB1F9G0JXOo&t=509s)
-

@@ -6,27 +6,27 @@ public class SwimmingSystem : MonoBehaviour
     public PlayerMovement movement;
     private bool isSwimming;
     private bool interacted;
-    
 
-   void Start() 
+
+   void Start()
    {
        animator = this.gameObject.GetComponent<Animator>();
        isSwimming = false;
        movement.runSpeed = 40f;
 
-   }   
-   
+   }
+
    void Update()
     {
         if(isSwimming)
-        { 
+        {
             movement.runSpeed = 20f;
             Debug.Log("SWIMMING");
         }
-        
+
     }
 
-    void OnTriggerEnter2D(Collider2D collision) 
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Water")
         {
@@ -35,16 +35,12 @@ public class SwimmingSystem : MonoBehaviour
 
     }
 
-    void OnTriggerExit2D(Collider2D collision) 
+    void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Water")
         {
             isSwimming = false;
             movement.runSpeed = 40f;
         }
-    }    
+    }
 }
-
-    
-
-

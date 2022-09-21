@@ -26,17 +26,17 @@ public class PhysicsObject : MonoBehaviour {
         rb2d = GetComponent<Rigidbody2D> ();
     }
 
-    void Start () 
+    void Start ()
     {
         contactFilter.useTriggers = false;
         contactFilter.SetLayerMask (Physics2D.GetLayerCollisionMask (gameObject.layer));
         contactFilter.useLayerMask = true;
     }
 
-    void Update () 
+    void Update ()
     {
         targetVelocity = Vector2.zero;
-        ComputeVelocity ();  
+        ComputeVelocity ();
     }
 
     protected virtual void ComputeVelocity()
@@ -68,7 +68,7 @@ public class PhysicsObject : MonoBehaviour {
     {
         float distance = move.magnitude;
 
-        if (distance > minMoveDistance) 
+        if (distance > minMoveDistance)
         {
             int count = rb2d.Cast (move, contactFilter, hitBuffer, distance + shellRadius);
             hitBufferList.Clear ();
@@ -76,13 +76,13 @@ public class PhysicsObject : MonoBehaviour {
                 hitBufferList.Add (hitBuffer [i]);
             }
 
-            for (int i = 0; i < hitBufferList.Count; i++) 
+            for (int i = 0; i < hitBufferList.Count; i++)
             {
                 Vector2 currentNormal = hitBufferList [i].normal;
-                if (currentNormal.y > minGroundNormalY) 
+                if (currentNormal.y > minGroundNormalY)
                 {
                     grounded = true;
-                    if (yMovement) 
+                    if (yMovement)
                     {
                         groundNormal = currentNormal;
                         currentNormal.x = 0;
@@ -90,7 +90,7 @@ public class PhysicsObject : MonoBehaviour {
                 }
 
                 float projection = Vector2.Dot (velocity, currentNormal);
-                if (projection < 0) 
+                if (projection < 0)
                 {
                     velocity = velocity - projection * currentNormal;
                 }
@@ -106,4 +106,3 @@ public class PhysicsObject : MonoBehaviour {
     }
 
 }
-
