@@ -7,11 +7,18 @@ public class PlayerMovement : MonoBehaviour {
 	public CharacterController2D controller;
 	public Animator animator;
 
+	// player state floats
 	public float runSpeed = 80f;
+	public float horizontalMove = 0f;
+	public float slideSpeed = 5;
+	public float wallJumpLerp = 10;
 
-	float horizontalMove = 0f;
-	bool jump = false;
-	bool crouch = false;
+	// player state booleans
+	public bool jump = false;
+	public bool crouch = false;
+	public bool wallGrab = false;
+	public bool wallJump = false;
+	public bool wallSlide = false;
 
     public GameObject originPositionsObject;
 
@@ -20,25 +27,30 @@ public class PlayerMovement : MonoBehaviour {
 		// left = true;
 		// animator.SetBool("facingLeft", true);
         animator = GetComponent<Animator>();
-
     }
 
 	// Update is called once per frame
 	void Update () {
 
 		controller.Move(horizontalMove * Time.deltaTime, crouch, jump);
-		jump = false;
 
+		// get horzontal movement times runspeed
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
 		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
+		// jump check
 		if (Input.GetButtonDown("Jump"))
 		{
 			jump = true;
 			animator.SetBool("IsJumping", true);
+		} 
+		else 
+		{
+			jump = false;
 		}
 
+		// crouch check
 		if (Input.GetButtonDown("Crouch"))
 		{
 			crouch = true;
@@ -47,6 +59,7 @@ public class PlayerMovement : MonoBehaviour {
 			crouch = false;
 		}
 
+	    // falling check
 		if (controller.Falling())
 		{
 			animator.SetBool("IsFalling", true);
@@ -55,7 +68,6 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			animator.SetBool("IsFalling", false);
 		}
-
 	}
 
 	public void OnLanding ()
