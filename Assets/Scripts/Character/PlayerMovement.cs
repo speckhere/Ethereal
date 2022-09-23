@@ -6,6 +6,10 @@ public class PlayerMovement : MonoBehaviour {
 
 	public CharacterController2D controller;
 	public Animator animator;
+    public GameObject originPositionsObject;
+
+	[Space]
+	[Header("Movement")]
 
 	// player state floats
 	public float runSpeed = 80f;
@@ -13,14 +17,15 @@ public class PlayerMovement : MonoBehaviour {
 	public float slideSpeed = 5;
 	public float wallJumpLerp = 10;
 
+	[Space]
+	[Header("Booleans")]
+
 	// player state booleans
 	public bool jump = false;
 	public bool crouch = false;
 	public bool wallGrab = false;
 	public bool wallJump = false;
 	public bool wallSlide = false;
-
-    public GameObject originPositionsObject;
 
     void Start()
     {
