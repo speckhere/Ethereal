@@ -10,6 +10,7 @@ TagManager:
   - Ladder
   - FF-Waypoints
   - Snail-WPS
+  - Wall
   layers:
   - Default
   - TransparentFX
