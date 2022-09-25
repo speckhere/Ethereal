@@ -27,7 +27,6 @@ public class LadderMovement : MonoBehaviour
         }  else if (!isLadder)
         {
             animator.SetBool("IsClimbing", false);
-            Debug.Log ("Chillin'");
         }
 
         if (Input.GetButtonDown("Vertical"))
