@@ -21,11 +21,11 @@ See [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-G
 ## Install Unity
 You will need to have Unity installed on your computer.
 
-The project is using Unity 2021.3.10f1 and you can install it from the
+The project is using Unity 2021.3.11f1 and you can install it from the
 [Unity Hub](https://unity.com/download) or
 
-  * Window users can download [2021.3.10f1](https://download.unity3d.com/download_unity/1c7d0df0160b/UnityDownloadAssistant-2021.3.10f1.exe)
-  * MacOS users can download [2021.3.10f1](https://download.unity3d.com/download_unity/1c7d0df0160b/UnityDownloadAssistant-2021.3.10f1.dmg)
+  * Window users can download [2021.3.11f1](https://download.unity3d.com/download_unity/1c7d0df0160b/UnityDownloadAssistant-2021.3.11f1.exe)
+  * MacOS users can download [2021.3.11f1](https://download.unity3d.com/download_unity/1c7d0df0160b/UnityDownloadAssistant-2021.3.11f1.dmg)
 
 ### MacOS
 Can read the official
