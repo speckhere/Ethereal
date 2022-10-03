@@ -24,8 +24,8 @@ You will need to have Unity installed on your computer.
 The project is using Unity 2021.3.11f1 and you can install it from the
 [Unity Hub](https://unity.com/download) or
 
-  * Window users can download [2021.3.11f1](https://download.unity3d.com/download_unity/1c7d0df0160b/UnityDownloadAssistant-2021.3.11f1.exe)
-  * MacOS users can download [2021.3.11f1](https://download.unity3d.com/download_unity/1c7d0df0160b/UnityDownloadAssistant-2021.3.11f1.dmg)
+  * Window users can download [2021.3.11f1](https://download.unity3d.com/download_unity/0a5ca18544bf/Windows64EditorInstaller/UnitySetup64-2021.3.11f1.exe)
+  * MacOS users can download 2021.3.11f1 [Intel](https://download.unity3d.com/download_unity/0a5ca18544bf/MacEditorInstaller/Unity.pkg) [Apple Silicon](https://download.unity3d.com/download_unity/0a5ca18544bf/MacEditorInstallerArm64/Unity.pkg)
 
 ### MacOS
 Can read the official
