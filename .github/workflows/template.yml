@@ -22,7 +22,7 @@ jobs:
       fail-fast: false
       matrix:
         projectPath:
-          - ${{ env.GITHUB_WORKSPACE }}
+          - $GITHUB_WORKSPACE
         testMode:
           - playmode
           - editmode
