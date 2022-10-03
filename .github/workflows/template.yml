@@ -63,7 +63,7 @@ jobs:
           path: ${{ steps.tests.outputs.coveragePath }}
 
   buildWebGL:
-    needs: testRunner
+    needs: testAllModes
     name: Build for WebGL 🖥️
     runs-on: ubuntu-latest
     strategy:
