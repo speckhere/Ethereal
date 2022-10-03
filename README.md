@@ -68,6 +68,9 @@ how to install extensions.
 
 ## GitHub Actions with Unity
 
+# Useful links
+  * Generate .gitignore for a Unity project at [gitignore.io](https://gitignore.io)
+
 # Educate Yourself
   * [Learn Unity - Beginner's Game Development Tutorial](https://www.youtube.com/watch?v=gB1F9G0JXOo&t=509s)
-* [How to build your Unity game with Game CI and Github](https://www.youtube.com/watch?v=M2BZr02uai0)
+  * [How to build your Unity game with Game CI and Github](https://www.youtube.com/watch?v=M2BZr02uai0)
