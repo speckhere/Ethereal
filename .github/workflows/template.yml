@@ -107,7 +107,7 @@ jobs:
           path: build/WebGL
 
   buildWindows:
-    needs: testRunner
+    needs: testAllModes
     name: Build for Windows 🖥️
     runs-on: ubuntu-latest
     strategy:
