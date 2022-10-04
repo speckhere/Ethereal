@@ -337,7 +337,7 @@ GameObject:
   - component: {fileID: 86946948}
   - component: {fileID: 86946947}
   m_Layer: 0
-  m_Name: title sample
+  m_Name: TitleMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
