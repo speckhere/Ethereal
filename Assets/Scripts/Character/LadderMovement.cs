@@ -6,7 +6,7 @@ public class LadderMovement : MonoBehaviour
 {
 
     private float vertical;
-    private float speed = 8f;
+    private float speed = 6f;
     private bool isLadder;
     bool up = false;
     private bool isClimbing;
