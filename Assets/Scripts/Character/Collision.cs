@@ -7,6 +7,7 @@ public class Collision : MonoBehaviour
 
     [Header("Layers")]
     public LayerMask groundLayer;
+    public LayerMask dashItemLayer;
 
     [Space]
 
@@ -15,6 +16,7 @@ public class Collision : MonoBehaviour
     public bool onRightWall;
     public bool onLeftWall;
     public int wallSide;
+    public bool dashItem;
 
     [Space]
 
@@ -41,6 +43,9 @@ public class Collision : MonoBehaviour
         onLeftWall = Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
 
         wallSide = onRightWall ? -1 : 1;
+
+        dashItem = Physics2D.OverlapCircle((Vector2)transform.position, collisionRadius, dashItemLayer);
+
     }
 
     void OnDrawGizmos()

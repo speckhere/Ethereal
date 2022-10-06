@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour
     private Collision coll;
     [HideInInspector]
     public Rigidbody2D rb;
-    public AnimationScript anim;
+    private AnimationScript anim;
 
     [Space]
     [Header("Stats")]
