@@ -50,13 +50,13 @@ line_v2f line_vert (appdata_color v, float pixelWidth, out float4 outpos : SV_PO
 	float2 normalizedScreenSpaceNormal = normalize(screenSpaceNormal);
 	screenSpaceNormal = normalizedScreenSpaceNormal / _ScreenParams.xy;
 	float4 sn = float4(screenSpaceNormal.x, screenSpaceNormal.y, 0, 0);
-
+	
 	if (Mv.w < 0) {
 		// Seems to have a very minor effect, but the distance
 		// seems to be more accurate with this enabled
 		sn *= -1;
 	}
-
+	
 	float side = (v.uv.x - 0.5)*2;
 	outpos = (Mv / Mv.w) + side*sn*pixelWidth*0.5;
 	// Multiply by w because homogeneous coordinates (it still needs to be clipped)
@@ -67,7 +67,7 @@ line_v2f line_vert (appdata_color v, float pixelWidth, out float4 outpos : SV_PO
 	return o;
 }
 
-/** Copied from UnityCG.cginc because this function does not exist in Unity 5.2 */
+/** Copied from UnityCG.cginc because this function does not exist in Unity 5.2 */ 
 inline bool IsGammaSpaceCompatibility() {
 #if defined(UNITY_NO_LINEAR_COLORSPACE)
 	return true;

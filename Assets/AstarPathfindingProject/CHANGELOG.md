@@ -552,7 +552,7 @@
 		- Fixed some cases where the funnel modifier would produce incorrect results.
 		- Fixed typo in a private method in the AstarPath class. Renamed the UpdateGraphsInteral method to UpdateGraphsInternal.
 		- Fixed AIPath.remainingDistance and AIPath.targetReached could be incorrect for 1 frame when a new path had just been calculated (introduced in a previous beta release).
-
+	
 ## 4.0.11 (2017-09-09)
 - Fixed paths would ignore the ITraversalProvider (used for the turn based utilities) on the first node of the path, resulting in successful paths where they should have failed.
 - Fixed BlockManager.BlockMode.AllExceptSelector could often produce incorrect results. Thanks Cquels for spotting the bug.
@@ -1219,7 +1219,7 @@
 		- Fixed a few options only relevant for grid graphs were visible in the layered grid graph inspector as well.
 		- Fixed GridGraph.CheckConnection returned the wrong result when neighbours was Four and dir was less than 4.
 		- All compiler directives in the Optimizations tab are now tested during the package build phase. So hopefully none of them should give compiler errors now.
-		- Improved accuracy of intellisense by changing the start of some documentation comments to
+		- Improved accuracy of intellisense by changing the start of some documentation comments to 
 			but apparently not so well by MonoDevelop and VS.
 		- Fixed the editor sometimes incorrectly comparing versions which could cause the 'New Update' window to appear even though no new version was available.
 - Changes
