@@ -63,7 +63,7 @@ jobs:
           path: ${{ steps.tests.outputs.coveragePath }}
 
   buildWebGL:
-    # needs: testAllModes
+    needs: testAllModes
     name: Build for WebGL 🖥️
     runs-on: ubuntu-latest
     strategy:
@@ -107,7 +107,7 @@ jobs:
           path: build/WebGL
 
   buildWindows:
-    # needs: testAllModes
+    needs: testAllModes
     name: Build for Windows 🖥️
     runs-on: ubuntu-latest
     strategy:
