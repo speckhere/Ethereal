@@ -36,10 +36,10 @@ public class Movement : MonoBehaviour
 
     [Space]
     [Header("Polish")]
-    public ParticleSystem dashParticle;
-    public ParticleSystem jumpParticle;
-    public ParticleSystem wallJumpParticle;
-    public ParticleSystem slideParticle;
+    // public ParticleSystem dashParticle;
+    // public ParticleSystem jumpParticle;
+    // public ParticleSystem wallJumpParticle;
+    // public ParticleSystem slideParticle;
 
     // Start is called before the first frame update
     void Start()
