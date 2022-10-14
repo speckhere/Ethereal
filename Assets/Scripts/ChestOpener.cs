@@ -3,7 +3,7 @@ using UnityEngine;
 public class ChestOpener : MonoBehaviour
 {
     private Animator animator;
-    public GateInteract gate;
+    //public GateInteract gate;
     private bool playerNear;
     private bool interacted;
     public bool isKey;
