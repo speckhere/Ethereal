@@ -17,7 +17,7 @@ public class ChestOpener : MonoBehaviour
         {
             if(Input.GetKey("e") && playerNear)
             {
-                animator.SetTrigger("interacted");
+                animator.SetTrigger("opened");
                 interacted = true;
                 Debug.Log("HOLY SHIT GOLD!!");
             }
