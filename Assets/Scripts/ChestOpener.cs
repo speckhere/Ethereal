@@ -25,14 +25,14 @@ public class ChestOpener : MonoBehaviour
                 //this is were we pick what were giving the player
                 if(isKey && playerNear){
                     //KEY  
-                    animator.SetTrigger("interacted"); //change this interacted_with_key? 
+                    animator.SetTrigger("opened"); //change this interacted_with_key? 
                     interacted = true;
                     haveKey = true; 
                     Debug.Log("HOLY SHIT GOLD!!, And a KEY");
                 }
                 else {
                     //EMPTY CHEST
-                    animator.SetTrigger("interacted");
+                    animator.SetTrigger("opened");
                     interacted = true;
                     Debug.Log("HOLY SHIT GOLD!!, NO KEY");
                 }
