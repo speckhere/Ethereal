@@ -3,13 +3,18 @@ using UnityEngine;
 public class ChestOpener : MonoBehaviour
 {
     private Animator animator;
+    //public GateInteract gate;
     private bool playerNear;
     private bool interacted;
+    public bool isKey;
+    public bool haveKey; 
 
    void Start()
    {
        animator = this.gameObject.GetComponent<Animator>();
        interacted = false;
+       haveKey = false;
+       isKey = true;
    }
    void Update()
     {
@@ -17,9 +22,20 @@ public class ChestOpener : MonoBehaviour
         {
             if(Input.GetKey("e") && playerNear)
             {
-                animator.SetTrigger("interacted");
-                interacted = true;
-                Debug.Log("HOLY SHIT GOLD!!");
+                //this is were we pick what were giving the player
+                if(isKey && playerNear){
+                    //KEY  
+                    animator.SetTrigger("opened"); //change this interacted_with_key? 
+                    interacted = true;
+                    haveKey = true; 
+                    Debug.Log("HOLY SHIT GOLD!!, And a KEY");
+                }
+                else {
+                    //EMPTY CHEST
+                    animator.SetTrigger("opened");
+                    interacted = true;
+                    Debug.Log("HOLY SHIT GOLD!!, NO KEY");
+                }
             }
         }
     }
