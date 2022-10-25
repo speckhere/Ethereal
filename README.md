@@ -1,4 +1,5 @@
 # Ethereal
+![Tests](https://github.com/basictheprogram/Ethereal/actions/workflows/main.yml/badge.svg)
 
 //HELLO! <3
 

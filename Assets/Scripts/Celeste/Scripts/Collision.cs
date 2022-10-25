@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Collision : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class Collision : MonoBehaviour
     public bool onLeftWall;
     public int wallSide;
     public bool dashItem;
+    
+    //death script
+     public int Respawn;
 
     [Space]
 
@@ -56,5 +60,13 @@ public class Collision : MonoBehaviour
         Gizmos.DrawWireSphere((Vector2)transform.position  + bottomOffset, collisionRadius);
         Gizmos.DrawWireSphere((Vector2)transform.position + rightOffset, collisionRadius);
         Gizmos.DrawWireSphere((Vector2)transform.position + leftOffset, collisionRadius);
+    }
+  
+    void OnTriggerEnter2D(Collider2D other) 
+    {
+        if(other.CompareTag("Water"))
+        {
+            SceneManager.LoadScene(Respawn);
+        }
     }
 }
