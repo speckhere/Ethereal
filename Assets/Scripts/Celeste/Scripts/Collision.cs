@@ -67,7 +67,6 @@ public class Collision : MonoBehaviour
         if(other.CompareTag("Water"))
         {
             SceneManager.LoadScene(Respawn);
-            debug.log("YOU DIED");
         }
     }
 }
