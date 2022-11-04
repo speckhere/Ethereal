@@ -1,21 +1,20 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimationScript : MonoBehaviour
+public class AnimationScriptShroomy : MonoBehaviour
 {
 
     private Animator anim;
     private Movement move;
-    private Collision coll;
-
+    private CollisionShroomy coll;
     [HideInInspector]
     public SpriteRenderer sr;
 
     void Start()
     {
         anim = GetComponent<Animator>();
-        coll = GetComponentInParent<Collision>();
+        coll = GetComponent<CollisionShroomy>();
         move = GetComponentInParent<Movement>();
         sr = GetComponent<SpriteRenderer>();
     }
@@ -23,13 +22,6 @@ public class AnimationScript : MonoBehaviour
     void Update()
     {
         anim.SetBool("onGround", coll.onGround);
-        anim.SetBool("onWall", coll.onWall);
-        anim.SetBool("onRightWall", coll.onRightWall);
-        anim.SetBool("wallGrab", move.wallGrab);
-        anim.SetBool("wallSlide", move.wallSlide);
-        anim.SetBool("canMove", move.canMove);
-        anim.SetBool("isDashing", move.isDashing);
-
     }
 
     public void SetHorizontalMovement(float x,float y, float yVel)
