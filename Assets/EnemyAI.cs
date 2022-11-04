@@ -11,6 +11,7 @@ public Animator animator;
 
 public float speed = 200f;
 public float nextWaypointDistance = 3f;
+public bool reachedEndOfPath = false;
 
 public Transform ShroomGFX;
 

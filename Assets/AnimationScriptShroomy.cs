@@ -14,7 +14,7 @@ public class AnimationScriptShroomy : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        coll = GetComponentInParent<CollisionShroomy>();
+        coll = GetComponent<CollisionShroomy>();
         move = GetComponentInParent<Movement>();
         sr = GetComponent<SpriteRenderer>();
     }

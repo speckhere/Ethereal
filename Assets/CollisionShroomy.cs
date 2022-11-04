@@ -23,7 +23,7 @@ public class CollisionShroomy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Physics2D.IgnoreLayerCollision(3, 7);
     }
 
     // Update is called once per frame

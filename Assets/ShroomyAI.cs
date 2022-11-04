@@ -21,6 +21,11 @@ public class ShroomyAI : MonoBehaviour
     public bool followEnabled = true;
     public bool jumpEnabled = true;
     public bool directionLookEnabled = true;
+    public bool reachedEndOfPath = false;
+
+    [Header("Cooldown")]
+    public float jumpCooldown = 1.0f;
+    public float timeStamp;
 
     private Path path;
     private int currentWaypoint = 0;
@@ -73,16 +78,17 @@ public class ShroomyAI : MonoBehaviour
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 force = direction * speed * Time.deltaTime;
 
+        // update timestamp
+
         // Jump
-        if (jumpEnabled)
+        if (jumpEnabled && timeStamp <= Time.time)
         {
             float yVar = direction.y;
-            Debug.Log(yVar);
             if (direction.y > jumpNodeHeightRequirement)
             {
-                Debug.Log("Jumping");
                 rb.AddForce(Vector2.up * speed * jumpModifier);
             }
+            timeStamp = Time.time + jumpCooldown;
         }
 
         // Movement
