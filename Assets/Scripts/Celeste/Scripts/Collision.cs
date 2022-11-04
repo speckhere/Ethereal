@@ -22,6 +22,9 @@ public class Collision : MonoBehaviour
     //death script
      public int Respawn;
 
+     //respawn
+     private Vector2 respawnPoint;
+
     [Space]
 
     [Header("Collision")]
@@ -33,7 +36,8 @@ public class Collision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        respawnPoint = transform.position;
+        Debug.Log("YO MAMA!");
     }
 
     // Update is called once per frame
@@ -62,12 +66,17 @@ public class Collision : MonoBehaviour
         Gizmos.DrawWireSphere((Vector2)transform.position + leftOffset, collisionRadius);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(other.CompareTag("Water"))
+        if(collision.tag == "Water")
         {
-            SceneManager.LoadScene(Respawn);
+            transform.position = respawnPoint;
             Debug.Log("YOU DIED");
+        }
+        if(collision.tag == "Checkpoint")
+        {
+            respawnPoint = transform.position;
+            Debug.Log("CHECK!");
         }
     }
 }
