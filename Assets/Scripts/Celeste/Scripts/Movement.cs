@@ -41,12 +41,24 @@ public class Movement : MonoBehaviour
     public ParticleSystem wallJumpParticle;
     public ParticleSystem slideParticle;
 
+    //death script
+     public int Respawn;
+
+     private bool dead;
+
+     //respawn
+     private Vector2 respawnPoint;
+
     // Start is called before the first frame update
     void Start()
     {
         coll = GetComponent<Collision>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<AnimationScript>();
+
+        respawnPoint = transform.position;
+        dead = false;
+        Debug.Log("YO MAMA!");
     }
 
     // Update is called once per frame
@@ -317,4 +329,28 @@ public class Movement : MonoBehaviour
         int particleSide = coll.onRightWall ? 1 : -1;
         return particleSide;
     }
+
+    //Death by Water
+
+    // private void OnTriggerEnter2D(Collider2D collision)
+    // {
+    //     // if(collision.tag == "Water")
+    //     // {
+    //     //     transform.position = respawnPoint;
+    //     //     Debug.Log("YOU DIED");
+    //     //     dead = true;
+    //     //     StartCoroutine(Dying());
+    //     // }
+    //     if(collision.tag == "Checkpoint")
+    //     {
+    //         respawnPoint = transform.position;
+    //         Debug.Log("CHECK!");
+    //     }
+    // }
+
+    // IEnumerator Dying()
+    // {
+    //     dead = true;
+    //     yield return new WaitForSeconds(3);
+    // }
 }
