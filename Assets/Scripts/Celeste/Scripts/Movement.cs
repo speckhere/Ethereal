@@ -41,9 +41,8 @@ public class Movement : MonoBehaviour
     public ParticleSystem wallJumpParticle;
     public ParticleSystem slideParticle;
 
-    //death script
+    // //death script
      public int Respawn;
-
      private bool dead;
 
      //respawn
@@ -332,25 +331,25 @@ public class Movement : MonoBehaviour
 
     //Death by Water
 
-    // private void OnTriggerEnter2D(Collider2D collision)
-    // {
-    //     // if(collision.tag == "Water")
-    //     // {
-    //     //     transform.position = respawnPoint;
-    //     //     Debug.Log("YOU DIED");
-    //     //     dead = true;
-    //     //     StartCoroutine(Dying());
-    //     // }
-    //     if(collision.tag == "Checkpoint")
-    //     {
-    //         respawnPoint = transform.position;
-    //         Debug.Log("CHECK!");
-    //     }
-    // }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+    if(collision.tag == "Water")
+        {
+        Debug.Log("YOU DIED");
+        dead = true;
+        StartCoroutine(Dying());
+        }
+        
+    if(collision.tag == "Checkpoint")
+        {
+        respawnPoint = transform.position;
+            Debug.Log("CHECK!");
+        }
+    }
 
-    // IEnumerator Dying()
-    // {
-    //     dead = true;
-    //     yield return new WaitForSeconds(3);
-    // }
+    IEnumerator Dying()
+    {
+        yield return new WaitForSeconds(2);
+        transform.position = respawnPoint;
+    }
 }

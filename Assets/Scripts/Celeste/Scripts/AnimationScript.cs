@@ -61,4 +61,6 @@ public class AnimationScript : MonoBehaviour
         bool state = (side == 1) ? false : true;
         sr.flipX = state;
     }
+
 }
+
