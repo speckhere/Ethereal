@@ -343,12 +343,13 @@ public class Movement : MonoBehaviour
     if(collision.tag == "Checkpoint")
         {
         respawnPoint = transform.position;
-            Debug.Log("CHECK!");
+        Debug.Log("CHECK!");
         }
     }
 
     IEnumerator Dying()
     {
+        anim.SetTrigger("death");
         yield return new WaitForSeconds(2);
         transform.position = respawnPoint;
     }
