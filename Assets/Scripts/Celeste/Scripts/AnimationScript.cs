@@ -29,6 +29,7 @@ public class AnimationScript : MonoBehaviour
         anim.SetBool("wallSlide", move.wallSlide);
         anim.SetBool("canMove", move.canMove);
         anim.SetBool("isDashing", move.isDashing);
+        anim.SetBool("isDying", move.isDying);
 
     }
 
