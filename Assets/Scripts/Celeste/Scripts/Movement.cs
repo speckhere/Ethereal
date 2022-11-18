@@ -41,9 +41,9 @@ public class Movement : MonoBehaviour
     public ParticleSystem wallJumpParticle;
     public ParticleSystem slideParticle;
 
-    // //death script
+    //death script
      public int Respawn;
-     private bool dead;
+     public bool isDying;
 
      //respawn
      private Vector2 respawnPoint;
@@ -56,7 +56,7 @@ public class Movement : MonoBehaviour
         anim = GetComponentInChildren<AnimationScript>();
 
         respawnPoint = transform.position;
-        dead = false;
+        isDying = false;
         Debug.Log("YO MAMA!");
     }
 
@@ -336,7 +336,6 @@ public class Movement : MonoBehaviour
     if(collision.tag == "Water")
         {
         Debug.Log("YOU DIED");
-        dead = true;
         StartCoroutine(Dying());
         }
         
@@ -349,8 +348,11 @@ public class Movement : MonoBehaviour
 
     IEnumerator Dying()
     {
-        anim.SetTrigger("death");
-        yield return new WaitForSeconds(2);
+        isDying = true;
+        rb.simulated = false;
+        yield return new WaitForSeconds(1);
         transform.position = respawnPoint;
+        rb.simulated = true;
+        isDying = false;
     }
 }
