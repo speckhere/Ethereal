@@ -10,27 +10,27 @@ public class LevelLoader : MonoBehaviour
     public float transitionTime = 1f;
 
     // Update is called once per frame
-    void Update()
-    {
-        if (GameObject.Find("Portal").GetComponent<LevelUp>().Died)
-        {
-            LoadLevel();
-        }
-    }
+    // void Update()
+    // {
+    //     if (GameObject.Find("Portal").GetComponent<LevelUp>().Died)
+    //     {
+    //         LoadLevel();
+    //     }
+    // }
 
-    public void LoadLevel()
-    {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
-    }
+    // public void LoadLevel()
+    // {
+    //     StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
+    // }
 
-    IEnumerator LoadLevel(int levelIndex)
-    {
-        transition.SetTrigger("Start");
-        Debug.Log("Test");
+    // IEnumerator LoadLevel(int levelIndex)
+    // {
+    //     transition.SetTrigger("Start");
+    //     Debug.Log("Test");
 
-        yield return new WaitForSeconds(transitionTime);
+    //     yield return new WaitForSeconds(transitionTime);
 
-        SceneManager.LoadScene(levelIndex);
+    //     SceneManager.LoadScene(levelIndex);
 
-    }
+    // }
 }

@@ -25,8 +25,8 @@ public class AnimationScript : MonoBehaviour
         anim.SetBool("onGround", coll.onGround);
         anim.SetBool("onWall", coll.onWall);
         anim.SetBool("onRightWall", coll.onRightWall);
-        //anim.SetBool("wallGrab", move.wallGrab);
-        //anim.SetBool("wallSlide", move.wallSlide);
+        anim.SetBool("wallGrab", move.wallGrab);
+        anim.SetBool("wallSlide", move.wallSlide);
         anim.SetBool("canMove", move.canMove);
         anim.SetBool("isDashing", move.isDashing);
 
@@ -61,4 +61,6 @@ public class AnimationScript : MonoBehaviour
         bool state = (side == 1) ? false : true;
         sr.flipX = state;
     }
+
 }
+

@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Death : MonoBehaviour
 {
-    public int Respawn;
+    // public int Respawn;
   
-    void OnTriggerEnter2D(Collider2D other) 
-    {
-        if(other.CompareTag("Player"))
-        {
-            SceneManager.LoadScene(Respawn);
-        }
-    }
+    // void OnTriggerEnter2D(Collider2D other) 
+    // {
+    //     if(other.CompareTag("Player"))
+    //     {
+    //         SceneManager.LoadScene(Respawn);
+    //     }
+    // }
 }

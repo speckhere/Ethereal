@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Collision : MonoBehaviour
 {
@@ -19,12 +18,6 @@ public class Collision : MonoBehaviour
     public int wallSide;
     public bool dashItem;
 
-    //death script
-     public int Respawn;
-
-     //respawn
-     private Vector2 respawnPoint;
-
     [Space]
 
     [Header("Collision")]
@@ -36,8 +29,7 @@ public class Collision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        respawnPoint = transform.position;
-        Debug.Log("YO MAMA!");
+
     }
 
     // Update is called once per frame
@@ -64,19 +56,5 @@ public class Collision : MonoBehaviour
         Gizmos.DrawWireSphere((Vector2)transform.position  + bottomOffset, collisionRadius);
         Gizmos.DrawWireSphere((Vector2)transform.position + rightOffset, collisionRadius);
         Gizmos.DrawWireSphere((Vector2)transform.position + leftOffset, collisionRadius);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == "Water")
-        {
-            transform.position = respawnPoint;
-            Debug.Log("YOU DIED");
-        }
-        if(collision.tag == "Checkpoint")
-        {
-            respawnPoint = transform.position;
-            Debug.Log("CHECK!");
-        }
     }
 }
