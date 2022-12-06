@@ -69,7 +69,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -1641,10 +1641,10 @@ TextureImporter:
     nameFileIdTable:
       Old City_10: -731014940
       Old City_59: -1829995352
-      Old City_42: -367858507
       Old City_57: 1027893287
       Old City_19: -1018914999
       Old City_26: -90915190
+      Old City_42: -367858507
       Old City_36: 2099260291
       Old City_16: -203546887
       Old City_63: 1233558240
