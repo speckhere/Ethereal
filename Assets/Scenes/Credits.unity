@@ -834,9 +834,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Savannah Tanner - Project Lead\nCole Normandin-Parker - Coding and moral
-    support \nQuinten Schwartz - l\u2019Artist\nAidan Tengowski - Music\nIsabel Dulcinea-
-    Voice Actor, Dad Jokes (they're good)\n"
+  m_text: "Savannah Tanner - Project Lead\nEren\nCole Normandin-Parker - Coding and
+    moral support \nQuinten Schwartz - l\u2019Artist\nAidan Tengowski - Music\nIsabel
+    Dulcinea- Voice Actor, Dad Jokes (they're good)\nLeif Tanner - Level Design\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f6f047941f717424b9ab43e8ac68da2a, type: 2}
   m_sharedMaterial: {fileID: -3273248839184050394, guid: f6f047941f717424b9ab43e8ac68da2a, type: 2}
