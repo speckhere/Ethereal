@@ -89,6 +89,7 @@ public class ShroomyAI : MonoBehaviour
                 rb.AddForce(Vector2.up * speed * jumpModifier);
             }
             timeStamp = Time.time + jumpCooldown;
+            Debug.Log("Jumped");
         }
 
         // Movement

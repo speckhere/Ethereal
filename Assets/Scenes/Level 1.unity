@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 166054697}
   - component: {fileID: 166054696}
   - component: {fileID: 166054702}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 224449118}
   - component: {fileID: 224449116}
   - component: {fileID: 224449117}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7936,7 +7936,7 @@ GameObject:
   - component: {fileID: 582838477}
   - component: {fileID: 582838475}
   - component: {fileID: 582838476}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DashParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12920,7 +12920,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 721131729}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SlideParticleParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16348,7 +16348,7 @@ GameObject:
   - component: {fileID: 1144875511}
   - component: {fileID: 1144875509}
   - component: {fileID: 1144875510}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SlideParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74300,8 +74300,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 976169967
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 11f068f4b65ff4d0f87234467b6d07a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -75015,7 +75015,7 @@ GameObject:
   - component: {fileID: 1764793778}
   - component: {fileID: 1764793780}
   - component: {fileID: 1764793779}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpParticle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

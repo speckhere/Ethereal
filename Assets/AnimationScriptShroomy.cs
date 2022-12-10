@@ -22,6 +22,7 @@ public class AnimationScriptShroomy : MonoBehaviour
     void Update()
     {
         anim.SetBool("onGround", coll.onGround);
+        anim.SetBool("Walking", coll.HorizontalVelocity > 0.1f || coll.HorizontalVelocity < -0.1f);
     }
 
     public void SetHorizontalMovement(float x,float y, float yVel)
