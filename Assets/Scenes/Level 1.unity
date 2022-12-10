@@ -74238,6 +74238,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   onGround: 1
+  HorizontalVelocity: 0
   collisionRadius: 0.1
   bottomOffset: {x: 0, y: -1}
   rightOffset: {x: 0.5, y: 0}
@@ -104760,10 +104761,10 @@ MonoBehaviour:
   target: {fileID: 166054701}
   activateDistance: 50
   pathUpdateSeconds: 0.5
-  speed: 40
+  speed: 30
   nextWaypointDistance: 3
   jumpNodeHeightRequirement: 0.6
-  jumpModifier: 7
+  jumpModifier: 10
   jumpCheckOffset: 0.1
   followEnabled: 1
   jumpEnabled: 1
