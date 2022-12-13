@@ -11,6 +11,7 @@ public class CollisionShroomy : MonoBehaviour
     [Space]
 
     public bool onGround;
+    public float HorizontalVelocity;
 
     [Space]
 
@@ -30,6 +31,7 @@ public class CollisionShroomy : MonoBehaviour
     void Update()
     {  
         onGround = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
+        HorizontalVelocity = GetComponentInParent<Rigidbody2D>().velocity.x;
     }
 
     void OnDrawGizmos()
